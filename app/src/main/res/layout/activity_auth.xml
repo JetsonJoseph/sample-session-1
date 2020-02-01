@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity"
+    android:id="@+id/auth_root">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/auth_activity_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo_camera"
+            android:layout_centerHorizontal="true"/>
+
+
+        <EditText
+            android:id="@+id/auth_activity_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:background="@drawable/my_background"
+            android:hint="Email"
+            android:textColorHint="@color/colorWhite"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/auth_activity_icon"/>
+
+        <EditText
+            android:id="@+id/auth_activity_passowrd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:layout_below="@id/auth_activity_email"
+            android:background="@drawable/my_background"
+            android:hint="Password"
+            android:cursorVisible="true"
+            android:textColorHint="@color/colorWhite"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageButton
+            android:id="@+id/auth_activity_done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/auth_activity_passowrd"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_background"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auth_activity_done_btn"
+            android:text="Complete the fields and click on the button to continue."
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

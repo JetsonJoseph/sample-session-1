@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectActivity">
+
+    <ImageView
+        android:id="@+id/select_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/select_progressbar"/>
+
+    <ProgressBar
+        android:id="@+id/select_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_above="@id/select_wrapper"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/select_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/select_select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_background"
+            android:layout_weight="1"
+            android:text="Select"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/select_upload_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_background"
+            android:layout_weight="1"
+            android:text="Upload"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
